@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Applications that are easy to change consist of classes that are easy to reuse.
 # Reusable classes are pluggable units of well-defined behavior that have few entanglements.
 # An application that is easy to change is like a box of building blocks; you can select just the pieces you need and assemble them in unanticipated ways.
@@ -9,7 +11,6 @@ class Gear
   attr_reader :chainring, :cog, :rim, :tire
 
   def initialize(chainring, cog, rim, tire)
-
     @chainring = chainring
     @cog = cog
     @rim = rim

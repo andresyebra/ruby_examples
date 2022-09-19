@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Gear
-  attr_reader :chainring, :cog, :rim, :dic
+  attr_reader :chainring, :cog, :rim, :dic, :wheel
 
   def initialize(chainring:, cog:, rim:, dic:)
     @chainring = chainring
@@ -13,10 +15,6 @@ class Gear
 
   def ratio
     chainring / cog.to_f
-  end
-
-  def wheel
-    @wheel
   end
 end
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Wheel
   attr_reader :rim, :tire
 

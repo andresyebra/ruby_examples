@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Gear
   attr_reader :chainring, :cog
 
@@ -11,8 +13,7 @@ class Gear
   end
 end
 
-
 # puts Gear.new(52, 11).ratio
- # => 4.7272727272727275
+# => 4.7272727272727275
 # puts Gear.new(30, 27).ratio
 # => 1.11111111111111111

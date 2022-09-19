@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Gear
   attr_reader :chainring, :cog, :rim, :tire
 
@@ -17,7 +19,4 @@ class Gear
   end
 end
 
-
-#Gear.new(52, 11, 26, 1.5 Reducing  Costs With Duck Typing).gear_inches
-
-
+# Gear.new(52, 11, 26, 1.5 Reducing  Costs With Duck Typing).gear_inches

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Trip
   attr_reader :bicycles, :customers, :vehicle
 
@@ -17,7 +19,6 @@ class Mechanic
   end
 
   def prepare_bicycle(bicycle)
-    #...
+    # ...
   end
 end
-

@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
 # Trip preparation becomes easier
 class Trip
   attr_reader :bicycles, :customers, :vehicle
 
   def prepare(preparers)
-    preparers.each { |preparer|
-      preparer.prepare_trip(self) }
+    preparers.each do |preparer|
+      preparer.prepare_trip(self)
+    end
   end
 
   # ...
@@ -15,8 +18,9 @@ end
 
 class Mechanic
   def prepare_trip(trip)
-    trip.bicycles.each { |bicycle|
-      prepare_bicycle(bicycle) }
+    trip.bicycles.each do |bicycle|
+      prepare_bicycle(bicycle)
+    end
   end
 
   # ...
@@ -35,9 +39,7 @@ class Driver
     vehicle = trip.vehicle
     gas_up(vehicle)
     fill_water_tank(vehicle)
-
   end
 
   # ...
 end
-
